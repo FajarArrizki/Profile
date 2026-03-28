@@ -62,7 +62,7 @@ npm run build
 
 ## Branch Workflow
 
-Each member should work on their own branch.
+Each member should create and use their own branch before starting work.
 
 Suggested branch names:
 
@@ -70,39 +70,53 @@ Suggested branch names:
 - `salsabila-khairunnisa-lumbantobing`
 - `fajar-arrizki`
 
-### Create your branch
+### Step 1. Check the current branch
+
+Before creating a new branch, check which branch is currently active:
+
+```bash
+git branch --show-current
+```
+
+### Step 2. Create your own branch
 
 Choose the branch name that matches your name:
+
+For Khalimatus:
 
 ```bash
 git checkout -b khalimatus-saharani-pramudyah
 ```
 
+For Salsabila:
+
 ```bash
 git checkout -b salsabila-khairunnisa-lumbantobing
 ```
+
+For Fajar:
 
 ```bash
 git checkout -b fajar-arrizki
 ```
 
-## Commit Workflow
+### Step 3. Make your changes in your own branch
 
-After making changes, follow these steps.
+After switching to your branch, update only your own profile page and related files.
 
-### 1. Check changed files
+### Step 4. Check changed files
 
 ```bash
 git status
 ```
 
-### 2. Add files to staging
+### Step 5. Add files to staging
 
 ```bash
 git add .
 ```
 
-### 3. Create a commit
+### Step 6. Create a commit
 
 Example:
 
@@ -110,27 +124,33 @@ Example:
 git commit -m "feat: update profile page"
 ```
 
-## Push Workflow
+### Step 7. Push to your own branch
 
-Push your work to your own branch.
+Push your work to the same branch you created earlier.
 
 For Khalimatus:
 
 ```bash
-git push origin khalimatus-saharani-pramudyah
+git push -u origin khalimatus-saharani-pramudyah
 ```
 
 For Salsabila:
 
 ```bash
-git push origin salsabila-khairunnisa-lumbantobing
+git push -u origin salsabila-khairunnisa-lumbantobing
 ```
 
 For Fajar:
 
 ```bash
-git push origin fajar-arrizki
+git push -u origin fajar-arrizki
 ```
+
+### Important Notes
+
+- Do not rename your branch to `main` if you want to push to your personal branch.
+- Create the branch first, then work, then commit, then push to the same branch.
+- The branch name in `git push` must match the branch name created with `git checkout -b`.
 
 ## Project Structure
 
