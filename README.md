@@ -3,12 +3,15 @@
 This is a simple React project for displaying profile pages.  
 The project uses React, Vite, Tailwind CSS, and React Router DOM.
 
-## Tech Stack
+## Tech Tools
 
 - React
 - Vite
 - Tailwind CSS
 - React Router DOM
+- Git
+- GitHub
+- npm
 
 ## Repository
 
@@ -146,11 +149,44 @@ For Fajar:
 git push -u origin fajar-arrizki
 ```
 
+### Step 8. Update the `main` branch
+
+After your branch has been pushed, the changes should also be added to the `main` branch.
+
+Recommended workflow:
+
+1. Push your personal branch first.
+2. Open a Pull Request from your branch to `main`.
+3. Review the changes.
+4. Merge the branch into `main`.
+
+If you are updating `main` locally after the merge, use:
+
+```bash
+git checkout main
+git pull origin main
+```
+
+If the repository owner wants to merge directly from a local machine, merge each completed branch into `main` one by one:
+
+```bash
+git checkout main
+git pull origin main
+git merge khalimatus-saharani-pramudyah
+git merge salsabila-khairunnisa-lumbantobing
+git merge fajar-arrizki
+git push origin main
+```
+
+Only merge branches that are finished and already reviewed. If there is a conflict, resolve it first before continuing to the next branch.
+
 ### Important Notes
 
 - Do not rename your branch to `main` if you want to push to your personal branch.
 - Create the branch first, then work, then commit, then push to the same branch.
 - The branch name in `git push` must match the branch name created with `git checkout -b`.
+- After updating your personal branch, the final approved changes should also be merged into `main`.
+- To keep `main` fully synchronized, merge all approved member branches into `main`, not just one branch.
 
 ## Project Structure
 
