@@ -30,17 +30,25 @@ function ReactPlaceholderIcon() {
   )
 }
 
-export default function NameCard({ name }) {
+export default function NameCard({ name, imageSrc }) {
   return (
     <section className="overflow-hidden rounded-3xl border border-neutral-700 bg-neutral-900 shadow-2xl shadow-black/30">
       <div className="border-b border-neutral-700 bg-neutral-950 px-6 py-4">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-neutral-400">Profil</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-neutral-400">Profile</p>
       </div>
 
       <div className="flex min-h-[320px] items-center justify-center px-6 py-10 text-center">
         <div className="space-y-4">
           <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full border border-neutral-600 bg-black">
-            <ReactPlaceholderIcon />
+            {imageSrc ? (
+              <img
+                src={imageSrc}
+                alt={name}
+                className="h-full w-full rounded-full object-cover"
+              />
+            ) : (
+              <ReactPlaceholderIcon />
+            )}
           </div>
 
           <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">{name}</h2>

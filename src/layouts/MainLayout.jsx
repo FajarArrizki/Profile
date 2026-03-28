@@ -17,7 +17,7 @@ const navItems = [
 
 export default function MainLayout() {
   return (
-    <div className="min-h-screen bg-neutral-950 text-white">
+    <div className="flex min-h-screen flex-col bg-neutral-950 text-white">
       <header className="border-b border-neutral-700 bg-black">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-5 md:flex-row md:items-center md:justify-between md:px-6">
           <div className="flex items-center gap-3">
@@ -48,7 +48,7 @@ export default function MainLayout() {
                 strokeWidth="8"
               />
             </svg>
-            <h1 className="text-2xl font-bold text-white">Profil</h1>
+            <h1 className="text-2xl font-bold text-white">Profile</h1>
           </div>
 
           <nav className="flex flex-wrap gap-2">
@@ -72,9 +72,16 @@ export default function MainLayout() {
         </div>
       </header>
 
-      <main className="mx-auto w-full max-w-6xl px-4 py-8 md:px-6">
+      <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 md:px-6">
         <Outlet />
       </main>
+
+      <footer className="border-t border-neutral-700 bg-black">
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-4 py-5 text-sm text-neutral-400 md:flex-row md:items-center md:justify-between md:px-6">
+          <p>Profile</p>
+          <p>&copy; 2026 Personal Profile Project</p>
+        </div>
+      </footer>
     </div>
   )
 }
