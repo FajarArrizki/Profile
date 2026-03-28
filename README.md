@@ -196,7 +196,20 @@ Main folders used in this project:
 .
 |-- src/
 |   |-- components/
-|   |   `-- NameCard.jsx
+|   |   |-- NameCard.jsx
+|   |   `-- profile/
+|   |      |-- ProfileAboutSection.jsx
+|   |      |-- ProfileActionBadge.jsx
+|   |      |-- ProfileCard.jsx
+|   |      |-- ProfileHero.jsx
+|   |      |-- ProfileInfoItem.jsx
+|   |      |-- ProfileProjectsSection.jsx
+|   |      |-- ProfileSocialLinks.jsx
+|   |      |-- ProfileTechStackSection.jsx
+|   |      |-- ProjectCardItem.jsx
+|   |      |-- SocialBadge.jsx
+|   |      |-- TechStackBadge.jsx
+|   |      `-- TechStackIcon.jsx
 |   |-- layouts/
 |   |   `-- MainLayout.jsx
 |   |-- pages/
@@ -228,7 +241,16 @@ src/
 
 - `src/components/`
   Stores reusable UI components.
-  Current example: `NameCard.jsx`
+  This folder now contains shared profile UI components.
+
+- `src/components/profile/`
+  Stores modular profile sections such as hero, tech stack, projects, social badges, and about section.
+  Current examples:
+  - `ProfileCard.jsx`
+  - `ProfileHero.jsx`
+  - `ProfileTechStackSection.jsx`
+  - `ProfileProjectsSection.jsx`
+  - `ProfileAboutSection.jsx`
 
 - `src/layouts/`
   Stores layout files used across pages.
@@ -369,8 +391,13 @@ The following parts have already been completed in this version:
 - project setup with React and Vite
 - Tailwind CSS integration
 - navbar layout with title and React logo
+- footer section
 - route setup using React Router DOM
-- reusable `NameCard` component
+- modular profile component system
+- social badges for GitHub, LinkedIn, and Instagram
+- tech stack section
+- projects section
+- about me section with collapse / expand button
 - profile pages for:
   - Khalimatus Saharani Pramudyah
   - Salsabila Khairunnisa Lumbantobing
@@ -381,7 +408,7 @@ The following parts have already been completed in this version:
 
 The application flow is:
 
-`main.jsx` -> `App.jsx` -> `AppRouter.jsx` -> `MainLayout.jsx` -> `pages` -> `components/NameCard.jsx`
+`main.jsx` -> `App.jsx` -> `AppRouter.jsx` -> `MainLayout.jsx` -> `pages` -> `components/profile/*`
 
 ## Notes
 
