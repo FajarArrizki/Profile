@@ -3,16 +3,6 @@
 This is a simple React project for displaying profile pages.  
 The project uses React, Vite, Tailwind CSS, and React Router DOM.
 
-## Tech Tools
-
-- React
-- Vite
-- Tailwind CSS
-- React Router DOM
-- Git
-- GitHub
-- npm
-
 ## Repository
 
 GitHub repository:
