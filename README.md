@@ -137,12 +137,78 @@ git push origin fajar-arrizki
 Main folders used in this project:
 
 ```bash
+.
+|-- src/
+|   |-- components/
+|   |   `-- NameCard.jsx
+|   |-- layouts/
+|   |   `-- MainLayout.jsx
+|   |-- pages/
+|   |   |-- KhalimatusPage.jsx
+|   |   |-- SalsabilaPage.jsx
+|   |   `-- FajarPage.jsx
+|   |-- routes/
+|   |   `-- AppRouter.jsx
+|   |-- App.jsx
+|   |-- main.jsx
+|   `-- index.css
+|-- index.html
+|-- package.json
+|-- package-lock.json
+|-- vite.config.js
+|-- .gitignore
+`-- README.md
+```
+
+### Structure Explanation
+
+```bash
 src/
   components/
   layouts/
   pages/
   routes/
 ```
+
+- `src/components/`
+  Stores reusable UI components.
+  Current example: `NameCard.jsx`
+
+- `src/layouts/`
+  Stores layout files used across pages.
+  Current example: `MainLayout.jsx`
+
+- `src/pages/`
+  Stores page-level components.
+  Current examples:
+  - `KhalimatusPage.jsx`
+  - `SalsabilaPage.jsx`
+  - `FajarPage.jsx`
+
+- `src/routes/`
+  Stores routing configuration.
+  Current example: `AppRouter.jsx`
+
+- `src/App.jsx`
+  Main root component of the application.
+
+- `src/main.jsx`
+  Entry point that renders the React app into the DOM.
+
+- `src/index.css`
+  Global styling file for Tailwind CSS and base styles.
+
+- `index.html`
+  Main HTML template used by Vite.
+
+- `package.json`
+  Stores project name, scripts, and dependencies.
+
+- `vite.config.js`
+  Configuration file for Vite.
+
+- `.gitignore`
+  Prevents unnecessary files such as `node_modules` and `dist` from being committed.
 
 ## What Should Be Built
 
