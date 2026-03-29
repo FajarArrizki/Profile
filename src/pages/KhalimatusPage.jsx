@@ -30,12 +30,12 @@ export default function SaharaniPage() {
     'I am an Information Technology student who has a strong interest in web development. I have basic skills in HTML, CSS, and React, and I enjoy creating simple, clean, and responsive user interfaces. I am always interested in learning new things, especially related to frontend development, and I like to improve my coding skills step by step. In my learning process, I try to understand not only how to make something work, but also how to make it look good and easy to use. I also enjoy working in a team because it allows me to share ideas, learn from others, and gain new experiences. Although I am still in the learning stage, I am motivated to keep growing and developing my skills so that I can become a better frontend developer in the future.'
 
   const shortDescription =
-    'Information Technology student who is passionate about web development, UI design, and creating clean and modern digital experiences.'
+    'Information Technology student who is passionate about web development, UI design, and modern digital experiences.'
 
   const socialLinks = [
     { label: 'GitHub', href: '#', icon: 'github' },
-    { label: 'LinkedIn', href: '#', icon: 'linkedin' },
-    { label: 'Instagram', href: '#', icon: 'instagram' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/khalimatus-saharani-pramudyah-382bb1377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', icon: 'linkedin' },
+    { label: 'Instagram', href: 'https://www.instagram.com/raniiii.sh?igsh=MWxnZXJwd2h2NDgwNg==', icon: 'instagram' },
   ]
 
   const cvLink = '#'
